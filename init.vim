@@ -393,7 +393,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in preview window
+"" Use K to show documentation in preview window
 "nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 "function! s:show_documentation()
@@ -567,7 +567,7 @@ let g:go_fmt_command = "goimports"
 let g:go_info_mode='gopls'
 let g:go_def_mode = 'gopls'
 let g:go_decls_includes = "func,type"
-let g:go_auto_type_info = 0
+let g:go_auto_type_info = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_fields = 1
@@ -587,7 +587,7 @@ let g:go_highlight_generate_tags = 1
 let g:go_highlight_variable_declarations = 1
 let g:go_highlight_variable_assignments = 1
 let g:go_metalinter_autosave = 0
-let g:go_metalinter_enabled = ['vet', 'errcheck']
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_deadline = "5s"
 let g:go_auto_sameids = 0
 " let g:go_metalinter_autosave_enabled = ["golint"]
