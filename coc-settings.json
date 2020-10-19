@@ -16,6 +16,10 @@
                 ".hg/"
             ],
             "initializationOptions": {
+                "index": {
+                    "onChange": true
+                },
+                "highlight": { "lsRanges" : true },
                 "cache": {
                     "directory": "/tmp/ccls"
                 },
